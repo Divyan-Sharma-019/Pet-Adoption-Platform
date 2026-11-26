@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adopt a Pet — PawHaven</title>
+<meta name="description" content="Search and filter dogs, cats, rabbits, birds and small pets waiting for a home.">
+<meta name="theme-color" content="#FFFDF8">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="petals" aria-hidden="true"><i style="--x:41%;--s:15px;--o:0.61;--t:25s;--d:-4s;--sp:8s;--drift:-19vw"></i><i style="--x:74%;--s:13px;--o:0.81;--t:30s;--d:-2s;--sp:4s;--drift:21vw"></i><i style="--x:8%;--s:16px;--o:0.49;--t:37s;--d:-3s;--sp:8s;--drift:-15vw"></i><i style="--x:80%;--s:23px;--o:0.68;--t:25s;--d:-36s;--sp:8s;--drift:9vw"></i><i style="--x:28%;--s:13px;--o:0.67;--t:28s;--d:-18s;--sp:7s;--drift:-25vw"></i><i style="--x:15%;--s:22px;--o:0.57;--t:29s;--d:-6s;--sp:8s;--drift:-19vw"></i><i style="--x:12%;--s:21px;--o:0.73;--t:42s;--d:-3s;--sp:8s;--drift:-23vw"></i><i style="--x:87%;--s:21px;--o:0.62;--t:34s;--d:-29s;--sp:8s;--drift:19vw"></i><i style="--x:38%;--s:16px;--o:0.77;--t:31s;--d:-5s;--sp:8s;--drift:24vw"></i><i style="--x:63%;--s:18px;--o:0.74;--t:33s;--d:-38s;--sp:4s;--drift:-24vw"></i><i style="--x:53%;--s:15px;--o:0.75;--t:28s;--d:-31s;--sp:7s;--drift:-10vw"></i><i style="--x:97%;--s:21px;--o:0.68;--t:34s;--d:-21s;--sp:6s;--drift:26vw"></i><i style="--x:58%;--s:14px;--o:0.79;--t:32s;--d:-30s;--sp:4s;--drift:-17vw"></i><i style="--x:82%;--s:22px;--o:0.85;--t:38s;--d:-18s;--sp:7s;--drift:8vw"></i><i style="--x:59%;--s:18px;--o:0.52;--t:27s;--d:-31s;--sp:4s;--drift:-17vw"></i></div>
+<div class="page">
+<img class="branch branch--tl" src="images/blossom/branch-cluster.webp" alt="" aria-hidden="true" width="900" height="520">
+<img class="branch branch--tr" src="images/blossom/branch.webp" alt="" aria-hidden="true" width="1400" height="657">
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="PawHaven home"><img src="images/logo.svg" alt="" width="40" height="40"><span>PawHaven<small>Adoption</small></span></a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="adopt.html" aria-current="page">Adopt a Pet</a><a href="index.html#how">How It Works</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="adopt.html">Find Your Companion</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow reveal">Adopt a pet</span>
+    <h1 class="reveal">Meet Your New <em class="accent">Best Friend.</em></h1>
+    <p class="reveal">Every little face has a story. Perhaps yours is about to begin.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:1rem">
+  <div class="wrap">
+    <form class="panel filters reveal" id="filters" role="search" aria-label="Search and filter pets" autocomplete="off">
+      <div class="field"><label for="f-q">Search by name</label><input id="f-q" type="search" name="q" placeholder="Try &ldquo;Bella&rdquo;"></div>
+      <div class="field"><label for="f-type">Animal</label><select id="f-type" name="type"><option value="">All animals</option><option value="Dog">Dog</option><option value="Cat">Cat</option><option value="Rabbit">Rabbit</option><option value="Bird">Bird</option><option value="Other">Other</option></select></div>
+      <div class="field"><label for="f-gender">Gender</label><select id="f-gender" name="gender"><option value="">Any</option><option value="Female">Female</option><option value="Male">Male</option></select></div>
+      <div class="field"><label for="f-age">Age</label><select id="f-age" name="age"><option value="">Any age</option><option value="Baby">Baby (under 1)</option><option value="Young">Young (1&ndash;2)</option><option value="Adult">Adult (2&ndash;7)</option><option value="Senior">Senior (8+)</option></select></div>
+      <div class="field"><label for="f-size">Size</label><select id="f-size" name="size"><option value="">Any size</option><option value="Small">Small</option><option value="Medium">Medium</option><option value="Large">Large</option></select></div>
+      <div class="field"><label for="f-breed">Breed</label><select id="f-breed" name="breed"><option value="">All breeds</option></select></div>
+    </form>
+    <div class="results-bar">
+      <p id="result-count" aria-live="polite"></p>
+      <div style="display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap">
+        <label class="toggle-fav"><input type="checkbox" id="fav-only"> Show my favourites only</label>
+        <button class="btn btn-soft btn-sm" type="button" data-clear>Clear filters</button>
+      </div>
+    </div>
+    <div class="pet-grid" id="pet-grid"></div>
+    <div class="empty" id="empty-state" hidden>
+      <svg viewBox="0 0 400 340" aria-hidden="true"><g fill="#D98FA3" opacity=".7" transform="translate(200 175)"><ellipse cx="-42" cy="-30" rx="14" ry="19" transform="rotate(-18 -42 -30)"/><ellipse cx="-14" cy="-52" rx="14" ry="19"/><ellipse cx="18" cy="-52" rx="14" ry="19"/><ellipse cx="46" cy="-30" rx="14" ry="19" transform="rotate(18 46 -30)"/><path d="M2 -14C30 -14 52 12 52 34 52 52 38 56 22 52 12 49 -8 49 -18 52 -34 56 -48 52 -48 34 -48 12 -26 -14 2 -14Z"/></g></svg>
+      <h3>No friends match just yet.</h3>
+      <p>Try loosening a filter or two. New faces arrive all the time, and the right one may be a click away.</p>
+      <button class="btn btn-primary" type="button" data-clear>Clear all filters</button>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="" width="40" height="40"><span>PawHaven</span></a>
+      <p>A gentle place where animals who are waiting meet the people who are looking. Every adoption opens a home for the next rescue.</p>
+      <div class="socials"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="PawHaven on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2a2.5 2.5 0 1 0 2.5 2.5A2.5 2.5 0 0 0 12 9.5ZM17.5 5.8a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="PawHaven on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.5h2.9l.5-3.4h-3.4V8c0-1 .3-1.7 1.8-1.7H17V3.3C16.7 3.3 15.7 3.2 14.6 3.2c-2.600 0-4.300 1.500-4.300 4.400v2.500H7.400v3.400h2.900V22h3.200Z"/></svg></a><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="PawHaven on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.300-8.300L2 3h6.400l4.400 5.800L17.800 3Zm-1.100 16.200h1.700L7.300 4.700H5.500l11.200 14.500Z"/></svg></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="PawHaven on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800C22 15.200 22 12 22 12s0-3.200-.4-4.800ZM10 15V9l5.200 3L10 15Z"/></svg></a></div>
+    </div>
+    <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="adopt.html">Adopt a Pet</a></li><li><a href="index.html#how">How It Works</a></li><li><a href="about.html">About Us</a></li><li><a href="apply.html">Apply to Adopt</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="mailto:hello@pawhaven.example">hello@pawhaven.example</a></li><li><a href="tel:+910000000000">+91 00000 00000</a></li><li>12 Blossom Court, Sakura Lane<br>Pune, India</li><li>Sample details for demonstration</li></ul></div>
+    <div><h4>Meet</h4><ul><li><a href="adopt.html?type=Dog">Dogs</a></li><li><a href="adopt.html?type=Cat">Cats</a></li><li><a href="adopt.html?type=Rabbit">Rabbits</a></li><li><a href="adopt.html?type=Bird">Birds</a></li><li><a href="adopt.html?type=Other">Small friends</a></li></ul></div>
+  </div>
+  <div class="wrap footer-bottom"><p>&copy; <span data-year>2026</span> PawHaven. A frontend demonstration project built with HTML, CSS and JavaScript. No real animals or applications are listed.</p></div>
+</footer>
+<img class="branch branch--bl" src="images/blossom/branch-cluster.webp" alt="" aria-hidden="true" width="900" height="520" loading="lazy">
+<img class="branch branch--br" src="images/blossom/branch.webp" alt="" aria-hidden="true" width="1400" height="657" loading="lazy">
+</div>
+<script src="js/main.js"></script>
+<script src="js/pets.js"></script><script src="js/adopt.js"></script>
+</body>
+</html>
